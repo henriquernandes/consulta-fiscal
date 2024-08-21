@@ -1,0 +1,172 @@
+{
+  "meta": {
+    "title": "Consulta Fiscal",
+    "description": "Página de apresentação do Consulta Fiscal",
+    "lang": "pt-br",
+    "charset": "UTF-8",
+    "ldJson": {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "name": "Consulta Fiscal",
+      "description": "Empresa focada em fornecer dados de impostos para empresas.",
+      "url": "localhost",
+      "logo": "./public/favicon.svg",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "luna-landing@luna.com",
+        "contactType": "Client Service"
+      },
+      "sameAs": [
+        "https://www.twitter.com/yourpage",
+        "https://www.instagram.com/yourpage",
+        "https://www.linkedin.com/company/yourpage"
+      ]
+    }
+  },
+  "headerData": {
+    "logo": "Consulta Fiscal",
+    "links": [
+      { "label": "Sobre", "href": "#" },
+      { "label": "Preços", "href": "#" },
+      { "label": "Preguntas Frequentes", "href": "#" }
+    ],
+    "login": { "label": "Entrar", "href": "#" }
+  },
+  "heroData": {
+    "title": "Descomplique o cadastro e atualização de",
+    "subTitle": "Temos milhares de dados de impostos de produtos atualizados e prontos para serem usados em sua empresa",
+    "primaryCta": "Github Repo",
+    "secondaryCta": "See our pricing",
+    "highlightedTitle": "impostos"
+  },
+  "servicesData": {
+    "title": "Tudo que você precisa para ficar em dia com os impostos de produtos",
+    "services": [
+      {
+        "title": "Cadastro de produtos",
+        "icon": "DevIcon",
+        "description": "Fornecemos os dados de impostos de produtos para você cadastrar em sua empresa referente ao seu estado."
+      },
+      {
+        "title": "Atualizado diariamente",
+        "icon": "PlanetIcon",
+        "description": "Nossos dados são atualizados diariamente para que você tenha sempre as informações mais recentes."
+      },
+      {
+        "title": "Fácil de usar",
+        "icon": "FileIcon",
+        "description": "Você pode acessar nossos dados de forma fácil e rápida, sem precisar de um conhecimento técnico."
+      },
+      {
+        "title": "Configurações personalizadas",
+        "icon": "ConfigIcon",
+        "description": "Você pode configurar os impostos de acordo com a sua necessidade, sem precisar de um conhecimento técnico."
+      }
+    ]
+  },
+  "adventajesData": {
+    "title": "Aumente a produtividade e a eficiência com nossos dados de impostos",
+    "adventajes": [
+      {
+        "title": "Dados de impostos em um só lugar",
+        "description": "Tenha acesso a milhares de dados de impostos de produtos em um só lugar, sem precisar de um conhecimento técnico.",
+        "img": "seo.webp",
+        "imageAlt": "SEO",
+        "checks": [
+          "Impostos Atualizados",
+          "Todos Estados",
+          "Disponível a qualquer hora"
+        ]
+      }
+    ]
+  },
+  "brandsData": {
+    "title": "Integration with Leading Technologies",
+    "description": "Effortlessly integrate with leading technologies. Our platform seamlessly supports industry-standard tools and frameworks, enabling you to stay ahead of the curve and maximize productivity. Explore endless possibilities with our comprehensive compatibility features",
+    "brands": [
+      { "label": "React", "icon": "ReactIcon", "href": "https://react.dev/" },
+      { "label": "Vue", "icon": "VueIcon", "href": "https://vuejs.org/" },
+      {
+        "label": "Svelte",
+        "icon": "SvelteIcon",
+        "href": "https://svelte.dev/"
+      },
+      {
+        "label": "Solid",
+        "icon": "SolidIcon",
+        "href": "https://www.solidjs.com/"
+      },
+      {
+        "label": "Vercel",
+        "icon": "VercelIcon",
+        "href": "https://vercel.com/"
+      },
+      {
+        "label": "Netlify",
+        "icon": "NetlifyIcon",
+        "href": "https://www.netlify.com/"
+      }
+    ]
+  },
+  "pricingData": {
+    "title": "Our Pricing",
+    "tiers": [
+      {
+        "title": "Starter",
+        "description": "Best option for personal use & for your next project.",
+        "price": {
+          "amount": "Free"
+        },
+        "features": [
+          "feature 1",
+          "feature 2",
+          "feature 3",
+          "feature 4",
+          "feature 5"
+        ],
+        "cta": "Get started"
+      },
+      {
+        "title": "Professional",
+        "description": "Relevant for multiple users, extended & premium support.",
+        "price": {
+          "amount": "$29",
+          "period": "/month"
+        },
+        "features": [
+          "feature 1",
+          "feature 2",
+          "feature 3",
+          "feature 4",
+          "feature 5"
+        ],
+        "cta": "Get started"
+      },
+      {
+        "title": "Enterprise",
+        "description": "Best for large scale uses and extended redistribution rights.",
+        "price": {
+          "amount": "$59",
+          "period": "/month"
+        },
+        "features": [
+          "feature 1",
+          "feature 2",
+          "feature 3",
+          "feature 4",
+          "feature 5"
+        ],
+        "cta": "Get started"
+      }
+    ]
+  },
+  "footerData": {
+    "logo": "Consulta Fiscal",
+    "description": "Empresa focada em fornecer dados de impostos para empresas.",
+    "links": [
+      { "label": "Sobre", "href": "/" },
+      { "label": "Perguntas Frequentes", "href": "/" }
+    ],
+    "socials": [{ "icon": "MailIcon", "href": "/" }]
+  }
+}
