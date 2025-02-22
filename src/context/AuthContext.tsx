@@ -1,11 +1,9 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
 import { User } from "@/types/UserType";
-import {
-  getUsuarioAtual,
-  setUsuarioAtual,
-  isUsuarioLogado,
-} from "@/utils/user";
+import { getUsuarioLocalStorage, setUsuarioLocalStorage } from "@/utils/user";
 import { logout } from "@/services/requests/auth/logout";
+import { validarUsuario } from "@/services/requests/auth/validarUsuario";
+import { router } from "@/main";
 
 export interface AuthContextType {
   user: User | null;
@@ -19,21 +17,31 @@ const AuthContext = createContext<AuthContextType | undefined>(undefined);
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
-  const [user, setUser] = useState<User | null>(getUsuarioAtual());
-  const [isLogado, setIsLogado] = useState<boolean>(!!getUsuarioAtual());
+  const [user, setUser] = useState<User | null>(getUsuarioLocalStorage());
+  const isLogado = !!user;
 
   const entrar = (user: User) => {
-    setUsuarioAtual(user);
+    setUsuarioLocalStorage(user);
     setUser(user);
-    setIsLogado(true);
   };
 
   const logoutUser = () => {
     logout();
-    localStorage.removeItem("user");
     setUser(null);
-    setIsLogado(false);
+    setUsuarioLocalStorage(null);
   };
+
+  useEffect(() => {
+    validarUsuario().then((res) => {
+      if (res) {
+        entrar(res);
+      } else {
+        setUser(null);
+        setUsuarioLocalStorage(null);
+        router.navigate({ to: "/" });
+      }
+    });
+  }, []);
 
   return (
     <AuthContext.Provider value={{ user, entrar, sair: logoutUser, isLogado }}>

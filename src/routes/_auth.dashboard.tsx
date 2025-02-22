@@ -1,6 +1,6 @@
-import Dashboard from "@/Pages/Dashboard";
+import ListProducts from "@/Pages/ListProducts";
 import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/_auth/dashboard")({
-  component: () => <Dashboard />,
+  component: ListProducts,
 });

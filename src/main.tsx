@@ -8,7 +8,10 @@ import { ReactQueryDevtools } from "react-query/devtools";
 import { Toaster } from "./Components/ui/toaster";
 import { AuthProvider, useAuth } from "./context/AuthContext";
 
-const router = createRouter({ routeTree, context: { auth: undefined! } });
+export const router = createRouter({
+  routeTree,
+  context: { auth: undefined! },
+});
 const queryClient = new QueryClient();
 
 declare module "@tanstack/react-router" {
